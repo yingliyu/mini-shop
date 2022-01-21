@@ -1,0 +1,81 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "京喜商城"
+			}
+		}, {
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "资讯",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/member/member",
+			"style": {
+				"navigationBarTitleText": "会员中心",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/goods/goods",
+			"style": {
+				"navigationBarTitleText": "商品列表",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "components/goods-list/goods-list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "京喜商城",
+		"navigationBarBackgroundColor": "#CD3333",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#ccc",
+		"selectedColor": "#CD3333",
+		"iconWidth": "22px",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-active.png"
+			},
+			{
+				"text": "资讯",
+				"pagePath": "pages/news/news",
+				"iconPath": "static/tabbar/news.png",
+				"selectedIconPath": "static/tabbar/news-active.png"
+			},
+			{
+				"text": "购物车",
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/tabbar/cart.png",
+				"selectedIconPath": "static/tabbar/cart-active.png"
+			},
+			{
+				"text": "会员中心",
+				"pagePath": "pages/member/member",
+				"iconPath": "static/tabbar/member.png",
+				"selectedIconPath": "static/tabbar/member-active.png"
+			}
+		]
+	}
+}
