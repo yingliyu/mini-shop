@@ -1,22 +1,34 @@
 <template>
-	<view>
-		资讯
-	</view>
+	<news-list :list='newsList' @toNewsDetail='goDetail'></news-list>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				
-			}
+	import { NewsList } from "../../components/news-list/news-list.vue"
+export default {
+	components: {
+		NewsList
+	},
+	data() {
+		return {
+			newsList: []
+		};
+	},
+	onLoad() {
+		this.getNews();
+	},
+	methods: {
+		async getNews() {
+			const res = await this.$request({
+				url: '/shop/news',
+				baseUrl: 'http://rap2api.taobao.org/app/mock/297725'
+			});
+			this.newsList = res;
 		},
-		methods: {
-			
+		goDetail(id){
+			uni.navigateTo({
+				url:`/pages/news/detail?id=${id}`
+			})
 		}
 	}
+};
 </script>
-
-<style>
-
-</style>

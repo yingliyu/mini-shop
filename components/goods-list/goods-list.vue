@@ -1,6 +1,6 @@
 <template>
 	<view class="goods">
-		<view v-for="(item, index) in goods" :key="item.goods_id" class="goods-item">
+		<view v-for="(item, index) in goods" :key="item.goods_id" class="goods-item" @click='navigator(item.goods_id)'>
 			<!-- <image src="../../static/goods.jpg" mode=""></image> -->
 			<image :src="item.goods_big_logo || customImg" mode=""></image>
 			<view class="price">
@@ -20,7 +20,11 @@ export default {
 	data() {
 		return { customImg };
 	},
-	methods: {}
+	methods: {
+		navigator(id){
+			this.$emit('goodsItemClick',id)
+		}
+	}
 };
 </script>
 

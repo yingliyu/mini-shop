@@ -5,7 +5,7 @@
 		</swiper>
 		<!-- 导航区域 -->
 		<view class="nav">
-			<view class="nav-item" v-for="item in navList" :key="item.path" @click="navItemClick(item.path)">
+			<view class="nav-item" v-for="item in navList" :key="item.title" @click="navItemClick(item.path)">
 				<view :class="item.icon"></view>
 				<text>{{ item.title }}</text>
 			</view>
@@ -14,7 +14,7 @@
 		<!-- 推荐商品 -->
 		<view class="hot-goods">
 			<view class="title">推荐商品</view>
-			<goods-list :goods="goods" />
+			<goods-list :goods="goods" @goodsItemClick='goGoodsDetail'/>
 		</view>
 	</view>
 </template>
@@ -40,17 +40,17 @@ export default {
 				{
 					icon: 'iconfont iconzhuanli',
 					title: '新品多多',
-					path: '/pages/goods/goods'
+					path: '/pages/contact/contact'
 				},
 				{
 					icon: 'iconfont iconzhuanli1',
-					title: '社区活动',
-					path: '/pages/goods/goods'
+					title: '社区图片',
+					path: '/pages/picture/picture'
 				},
 				{
 					icon: 'iconfont icontushuguan',
-					title: '学习视频',
-					path: '/pages/goods/goods'
+					title: '联系我们',
+					path: '/pages/contact/contact'
 				}
 			],
 			banners: [],
@@ -110,6 +110,13 @@ export default {
 				url: '/api/public/v1/goods/search?pagenum=1&pagesize=10'
 			});
 			this.goods = res.goods;
+		},
+		// 跳转到商品详情页
+		goGoodsDetail(id){
+			console.log(id);
+			uni.navigateTo({
+				url:`/pages/goods/detail?id=${id}`
+			})
 		}
 	}
 };

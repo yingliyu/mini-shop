@@ -1,1 +1,1 @@
-<view>资讯</view>
+<news-list vue-id="1cdd0ce0-1" list="{{newsList}}" data-event-opts="{{[['^toNewsDetail',[['goDetail']]]]}}" bind:toNewsDetail="__e" bind:__l="__l"></news-list>

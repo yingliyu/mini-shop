@@ -3,7 +3,7 @@ const BASE_URL = 'https://api-hmugo-web.itheima.net';
 export const request = (options) => {
 	return new Promise((resolve, reject) => {
 		uni.request({
-			url: BASE_URL + options.url,
+			url: (options.baseUrl?options.baseUrl:BASE_URL) + options.url,
 			method: options.method || 'GET',
 			data: options.data,
 			success: res => {
