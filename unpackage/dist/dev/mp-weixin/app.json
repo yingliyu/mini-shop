@@ -1,53 +1,53 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/news/news",
-    "pages/cart/cart",
-    "pages/member/member",
-    "pages/goods/goods",
-    "pages/picture/picture",
-    "pages/contact/contact",
-    "components/goods-list/goods-list",
-    "pages/news/detail",
-    "pages/goods/detail"
-  ],
-  "subPackages": [],
-  "window": {
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "京喜商城",
-    "navigationBarBackgroundColor": "#CD3333",
-    "backgroundColor": "#F8F8F8"
-  },
-  "tabBar": {
-    "color": "#ccc",
-    "selectedColor": "#CD3333",
-    "iconWidth": "22px",
-    "list": [
-      {
-        "text": "首页",
-        "pagePath": "pages/index/index",
-        "iconPath": "static/tabbar/home.png",
-        "selectedIconPath": "static/tabbar/home-active.png"
-      },
-      {
-        "text": "资讯",
-        "pagePath": "pages/news/news",
-        "iconPath": "static/tabbar/news.png",
-        "selectedIconPath": "static/tabbar/news-active.png"
-      },
-      {
-        "text": "购物车",
-        "pagePath": "pages/cart/cart",
-        "iconPath": "static/tabbar/cart.png",
-        "selectedIconPath": "static/tabbar/cart-active.png"
-      },
-      {
-        "text": "会员中心",
-        "pagePath": "pages/member/member",
-        "iconPath": "static/tabbar/member.png",
-        "selectedIconPath": "static/tabbar/member-active.png"
-      }
-    ]
-  },
-  "usingComponents": {}
+    "pages": [
+        "pages/index/index",
+        "pages/news/news",
+        "pages/cart/cart",
+        "pages/member/member",
+        "pages/goods/goods",
+        "pages/picture/picture",
+        "pages/contact/contact",
+        "pages/news/detail",
+        "pages/goods/detail"
+    ],
+    "subPackages": [],
+    "window": {
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "京喜商城",
+        "navigationBarBackgroundColor": "#CD3333",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "color": "#ccc",
+        "selectedColor": "#CD3333",
+        "iconWidth": "22px",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "static/tabbar/home.png",
+                "selectedIconPath": "static/tabbar/home-active.png"
+            },
+            {
+                "text": "资讯",
+                "pagePath": "pages/news/news",
+                "iconPath": "static/tabbar/news.png",
+                "selectedIconPath": "static/tabbar/news-active.png"
+            },
+            {
+                "text": "购物车",
+                "pagePath": "pages/cart/cart",
+                "iconPath": "static/tabbar/cart.png",
+                "selectedIconPath": "static/tabbar/cart-active.png"
+            },
+            {
+                "text": "会员中心",
+                "pagePath": "pages/member/member",
+                "iconPath": "static/tabbar/member.png",
+                "selectedIconPath": "static/tabbar/member-active.png"
+            }
+        ]
+    },
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
 }

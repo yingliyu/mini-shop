@@ -24,57 +24,57 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.goods-detail {
+.goods-detail.data-v-f0a9f5ba {
   background-color: #eee;
 }
-.goods-detail .swiper {
+.goods-detail .swiper.data-v-f0a9f5ba {
   height: 700rpx;
 }
-.goods-detail .swiper image {
+.goods-detail .swiper image.data-v-f0a9f5ba {
   width: 100%;
   height: 100%;
 }
-.goods-detail .goods-info {
+.goods-detail .goods-info.data-v-f0a9f5ba {
   background-color: #fff;
   padding: 30rpx 10rpx;
 }
-.goods-detail .goods-info .price {
+.goods-detail .goods-info .price.data-v-f0a9f5ba {
   line-height: 80rpx;
   color: #CD3333;
   font-size: 38rpx;
 }
-.goods-detail .goods-info .price text:last-child {
+.goods-detail .goods-info .price text.data-v-f0a9f5ba:last-child {
   margin-left: 30rpx;
   color: #ccc;
   font-size: 28rpx;
   text-decoration: line-through;
 }
-.goods-detail .goods-info .name {
+.goods-detail .goods-info .name.data-v-f0a9f5ba {
   font-size: 32rpx;
   line-height: 60rpx;
 }
-.goods-detail .other-info {
+.goods-detail .other-info.data-v-f0a9f5ba {
   margin: 10rpx auto;
   padding: 10rpx;
   font-size: 32rpx;
   line-height: 50rpx;
   background-color: #fff;
 }
-.goods-detail .goods-desc {
+.goods-detail .goods-desc.data-v-f0a9f5ba {
   padding-bottom: 50rpx;
   font-size: 28rpx;
   color: #333;
   line-height: 50rpx;
   background-color: #fff;
 }
-.goods-detail .goods-desc .sub-title {
+.goods-detail .goods-desc .sub-title.data-v-f0a9f5ba {
   padding: 10rpx;
   margin-bottom: 5rpx;
   font-size: 32rpx;
   line-height: 70rpx;
   border-bottom: 1px solid #eee;
 }
-.goods-detail .goods-nav {
+.goods-detail .goods-nav.data-v-f0a9f5ba {
   width: 750rpx;
   position: fixed;
   bottom: 0px;

@@ -24,18 +24,18 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.contact image {
+.contact image.data-v-476c8d48 {
   width: 750rpx;
   height: 320rpx;
 }
-.contact .info {
+.contact .info.data-v-476c8d48 {
   font-size: 30rpx;
   height: 80rpx;
   line-height: 80rpx;
   padding-left: 15px;
   border-bottom: 1px solid #eee;
 }
-.contact .map {
+.contact .map.data-v-476c8d48 {
   width: 750rpx;
   height: 750rpx;
 }

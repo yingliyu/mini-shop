@@ -24,23 +24,23 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.news-detail {
+.news-detail.data-v-6803dca4 {
   font-size: 30rpx;
   padding: 0 20rpx;
 }
-.news-detail .title {
+.news-detail .title.data-v-6803dca4 {
   width: 710rpx;
   text-align: center;
   display: block;
   margin: 20rpx 0;
   font-weight: bold;
 }
-.news-detail .info {
+.news-detail .info.data-v-6803dca4 {
   display: flex;
   justify-content: space-between;
   font-size: 23rpx;
 }
-.news-detail .content {
+.news-detail .content.data-v-6803dca4 {
   line-height: 50rpx;
   margin-top: 30rpx;
 }

@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .news-detail {
 	font-size: 30rpx;
 	padding: 0 20rpx;

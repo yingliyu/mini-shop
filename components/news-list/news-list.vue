@@ -1,7 +1,7 @@
 <template>
 	<view class="news" v-if="list && list.length">
 		<view class="news-item" v-for="item in list" :key="item.id" @click='toNewsDetail(item.id)'>
-			<image :src="item.img_url" mode=""></image>
+			<image class="news-img" :src="item.img_url" mode=""></image>
 			<view class="content">
 				<view class="title">{{ item.title }}</view>
 				<view class="info">
@@ -31,13 +31,13 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .news {
 	.news-item {
 		display: flex;
 		padding: 10rpx 20rpx;
 		border-bottom: 1px solid #eee;
-		image {
+		.news-img {
 			width: 200rpx;
 			height: 150rpx;
 		}
