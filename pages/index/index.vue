@@ -70,7 +70,7 @@ export default {
 		// 获取轮播图数据
 		async getBanners() {
 			const res = await this.$request({
-				url: '/api/public/v1/home/swiperdata'
+				url: '/shop/homeBanners',
 			});
 			console.log(res);
 			this.banners = res;
@@ -107,7 +107,7 @@ export default {
 		// 获取商品列表
 		async getHotGoods() {
 			const res = await this.$request({
-				url: '/api/public/v1/goods/search?pagenum=1&pagesize=10'
+				url: '/shop/goods/list?pagenum=1&pagesize=10',
 			});
 			this.goods = res.goods;
 		},

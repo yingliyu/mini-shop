@@ -20,7 +20,6 @@ export default {
 		async getNews() {
 			const res = await this.$request({
 				url: '/shop/news',
-				baseUrl: 'http://rap2api.taobao.org/app/mock/297725'
 			});
 			this.newsList = res;
 		},

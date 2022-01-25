@@ -24,11 +24,59 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.goods-detail {
+  background-color: #eee;
+}
 .goods-detail .swiper {
   height: 700rpx;
 }
 .goods-detail .swiper image {
   width: 100%;
   height: 100%;
+}
+.goods-detail .goods-info {
+  background-color: #fff;
+  padding: 30rpx 10rpx;
+}
+.goods-detail .goods-info .price {
+  line-height: 80rpx;
+  color: #CD3333;
+  font-size: 38rpx;
+}
+.goods-detail .goods-info .price text:last-child {
+  margin-left: 30rpx;
+  color: #ccc;
+  font-size: 28rpx;
+  text-decoration: line-through;
+}
+.goods-detail .goods-info .name {
+  font-size: 32rpx;
+  line-height: 60rpx;
+}
+.goods-detail .other-info {
+  margin: 10rpx auto;
+  padding: 10rpx;
+  font-size: 32rpx;
+  line-height: 50rpx;
+  background-color: #fff;
+}
+.goods-detail .goods-desc {
+  padding-bottom: 50rpx;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 50rpx;
+  background-color: #fff;
+}
+.goods-detail .goods-desc .sub-title {
+  padding: 10rpx;
+  margin-bottom: 5rpx;
+  font-size: 32rpx;
+  line-height: 70rpx;
+  border-bottom: 1px solid #eee;
+}
+.goods-detail .goods-nav {
+  width: 750rpx;
+  position: fixed;
+  bottom: 0px;
 }
 

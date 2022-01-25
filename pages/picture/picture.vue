@@ -6,7 +6,7 @@
 		<scroll-view scroll-y="true" class="content" v-if="activePics && activePics.length !== 0">
 			<view class="item-wrapper">
 				<view class="item" v-for="item in activePics" :key="item.cat_id">
-					<image :src="item.cat_icon || img" @click="previewImg(item.cat_icon)"></image>
+					<image :src="item.cat_icon || require('../../static/goods.jpg')" @click="previewImg(item.cat_icon)"></image>
 					<text>{{ item.cat_name + '发到空间里的飞机离开东法兰克风格的给回复高' }}</text>
 				</view>
 			</view>
@@ -16,14 +16,14 @@
 </template>
 
 <script>
-const pic = require('../../static/goods.jpg');
+// const pic = require('../../static/goods.jpg');
 export default {
 	data() {
 		return {
 			picList: [],
 			active: 0,
 			activePics: [],
-			img: pic
+			// img: pic
 		};
 	},
 	onLoad() {
@@ -32,21 +32,23 @@ export default {
 	methods: {
 		async getPicsTypes() {
 			const res = await this.$request({
-				url: '/api/public/v1/categories'
+				// url: '/api/public/v1/categories',
+				url: '/shop/goods/category/list',
 			});
 			this.picList = res;
 			this.getActivePics();
 		},
 		changePicType(index) {
+			console.log(index);
 			this.active = index;
-			this.getActivePics();
+			this.getActivePics(index);
 		},
-		getActivePics() {
+		getActivePics(curIndex) {
 			if (!this.picList.length) {
 				return
 			};
 			this.picList.forEach((item, index) => {
-				if (index === this.active) {
+				if (index ===curIndex) {
 					this.activePics = item.children[0].children||[];
 				} 
 			});

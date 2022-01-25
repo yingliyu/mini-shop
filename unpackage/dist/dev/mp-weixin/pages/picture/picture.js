@@ -97,6 +97,27 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  var l0 =
+    _vm.activePics && _vm.activePics.length !== 0
+      ? _vm.__map(_vm.activePics, function(item, __i0__) {
+          var $orig = _vm.__get_orig(item)
+
+          var m0 = item.cat_icon || __webpack_require__(/*! ../../static/goods.jpg */ 27)
+
+          return {
+            $orig: $orig,
+            m0: m0
+          }
+        })
+      : null
+  _vm.$mp.data = Object.assign(
+    {},
+    {
+      $root: {
+        l0: l0
+      }
+    }
+  )
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -148,15 +169,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
-var pic = __webpack_require__(/*! ../../static/goods.jpg */ 27);var _default =
-{
+// const pic = require('../../static/goods.jpg');
+var _default = {
   data: function data() {
     return {
       picList: [],
       active: 0,
-      activePics: [],
-      img: pic };
-
+      activePics: []
+      // img: pic
+    };
   },
   onLoad: function onLoad() {
     this.getPicsTypes();
@@ -164,21 +185,23 @@ var pic = __webpack_require__(/*! ../../static/goods.jpg */ 27);var _default =
   methods: {
     getPicsTypes: function getPicsTypes() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
                   _this.$request({
-                    url: '/api/public/v1/categories' }));case 2:res = _context.sent;
+                    // url: '/api/public/v1/categories',
+                    url: '/shop/goods/category/list' }));case 2:res = _context.sent;
 
                 _this.picList = res;
                 _this.getActivePics();case 5:case "end":return _context.stop();}}}, _callee);}))();
     },
     changePicType: function changePicType(index) {
+      console.log(index);
       this.active = index;
-      this.getActivePics();
+      this.getActivePics(index);
     },
-    getActivePics: function getActivePics() {var _this2 = this;
+    getActivePics: function getActivePics(curIndex) {var _this2 = this;
       if (!this.picList.length) {
         return;
       };
       this.picList.forEach(function (item, index) {
-        if (index === _this2.active) {
+        if (index === curIndex) {
           _this2.activePics = item.children[0].children || [];
         }
       });

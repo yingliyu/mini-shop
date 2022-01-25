@@ -1,6 +1,6 @@
 <template>
 	<view class="goods">
-		<goods-list :goods="goods" @goodsItemClick='goGoodsDetail'/>
+		<goods-list :goods="goods" @goodsItemClick="goGoodsDetail" />
 		<view v-if="noData" class="data-over">-------我是有底线的-------</view>
 	</view>
 </template>
@@ -42,17 +42,17 @@ export default {
 		// 获取商品列表
 		async getHotGoods(callback) {
 			const res = await this.$request({
-				url: `/api/public/v1/goods/search?pagenum=${this.pageIndex}&pagesize=10`
+				url: `/shop/goods/list?pagenum=${this.pageIndex}&pagesize=10`,
 			});
 			this.goods = [...this.goods, ...res.goods];
 			callback && callback();
 		},
 		// 跳转到商品详情页
-		goGoodsDetail(id){
+		goGoodsDetail(id) {
 			console.log(id);
 			uni.navigateTo({
-				url:`/pages/goods/detail?id=${id}`
-			})
+				url: `/pages/goods/detail?id=${id}`
+			});
 		}
 	}
 };

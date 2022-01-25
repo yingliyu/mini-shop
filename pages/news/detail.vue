@@ -25,7 +25,6 @@ export default {
 		async getNewsDetail(id) {
 			const res = await this.$request({
 				url: '/shop/news/detail',
-				baseUrl: 'http://rap2api.taobao.org/app/mock/297725'
 			});
 			console.log(res);
 			if (!res.length) return;

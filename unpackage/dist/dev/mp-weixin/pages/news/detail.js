@@ -156,8 +156,7 @@ var _default =
   methods: {
     getNewsDetail: function getNewsDetail(id) {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
                   _this.$request({
-                    url: '/shop/news/detail',
-                    baseUrl: 'http://rap2api.taobao.org/app/mock/297725' }));case 2:res = _context.sent;
+                    url: '/shop/news/detail' }));case 2:res = _context.sent;
 
                 console.log(res);if (
                 res.length) {_context.next = 6;break;}return _context.abrupt("return");case 6:

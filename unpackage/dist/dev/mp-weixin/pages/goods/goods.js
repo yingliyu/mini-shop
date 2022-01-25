@@ -369,7 +369,7 @@ var _goodsList = _interopRequireDefault(__webpack_require__(/*! ../../components
     // 获取商品列表
     getHotGoods: function getHotGoods(callback) {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
                   _this2.$request({
-                    url: "/api/public/v1/goods/search?pagenum=".concat(_this2.pageIndex, "&pagesize=10") }));case 2:res = _context.sent;
+                    url: "/shop/goods/list?pagenum=".concat(_this2.pageIndex, "&pagesize=10") }));case 2:res = _context.sent;
 
                 _this2.goods = [].concat(_toConsumableArray(_this2.goods), _toConsumableArray(res.goods));
                 callback && callback();case 5:case "end":return _context.stop();}}}, _callee);}))();
