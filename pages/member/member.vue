@@ -2,34 +2,28 @@
 	<view class="charts-wrapper">
 		<!-- 柱状图 -->
 		<view class="charts-box">
-			<view class="title-wrapper">
-				<view class="line"></view>
-				<text class="title">柱状图</text>
-			</view>
-
+			<box-title title='柱状图' />
 			<qiun-data-charts type="column" :chartData="chartData" :echartsH5="true" :echartsApp="true" background="#fff" />
 		</view>
 		<!-- 折线图 -->
 		<view class="charts-box">
-			<view class="title-wrapper">
-				<view class="line"></view>
-				<text class="title">折线图</text>
-			</view>
+			<box-title title='折线图' />
 			<qiun-data-charts type="line" :chartData="chartData" :echartsH5="true" :echartsApp="true" background="#fff" />
 		</view>
 		<!-- 词云 -->
 		<view class="charts-box">
-			<view class="title-wrapper">
-				<view class="line"></view>
-				<text class="title">词云</text>
-			</view>
+			
+			<box-title title='词云' />
+			
 			<qiun-data-charts type="word" :chartData="wordCloudChartData" />
 		</view>
 	</view>
 </template>
 
 <script>
+	import BoxTitle from '@/components/box-title/box-title.vue';
 export default {
+	components:{BoxTitle},
 	data() {
 		return {
 			chartData: {
@@ -130,28 +124,6 @@ export default {
 	padding: 0 20rpx 200rpx 20rpx;
 	background-color: $bg-color-grey;
 	box-sizing: border-box;
-	.title-wrapper {
-		position: relative;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		padding: 12px 10px;
-		font-weight: 400;
-		.line {
-			height: 30rpx;
-			background-color: #2979ff;
-			border-radius: 10px;
-			width: 4px;
-			margin-right: 15rpx;
-		}
-		.title {
-			font-size: 30rpx;
-			display: flex;
-			flex-direction: column;
-			flex: 1;
-			color: #333;
-		}
-	}
 
 	/* 请根据需求修改图表容器尺寸，如果父容器没有高度图表则会显示异常 */
 	.charts-box {

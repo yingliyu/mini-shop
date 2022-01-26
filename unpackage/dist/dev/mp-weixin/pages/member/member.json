@@ -1,7 +1,8 @@
 {
-  "navigationBarTitleText": "会员中心",
+  "navigationBarTitleText": "图表示例",
   "enablePullDownRefresh": false,
   "usingComponents": {
+    "box-title": "/components/box-title/box-title",
     "qiun-data-charts": "/uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts"
   }
 }

@@ -32,28 +32,6 @@
   box-sizing: border-box;
   /* 请根据需求修改图表容器尺寸，如果父容器没有高度图表则会显示异常 */
 }
-.charts-wrapper .title-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 10px;
-  font-weight: 400;
-}
-.charts-wrapper .title-wrapper .line {
-  height: 30rpx;
-  background-color: #2979ff;
-  border-radius: 10px;
-  width: 4px;
-  margin-right: 15rpx;
-}
-.charts-wrapper .title-wrapper .title {
-  font-size: 30rpx;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  color: #333;
-}
 .charts-wrapper .charts-box {
   width: 710rpx;
   height: 250px;
