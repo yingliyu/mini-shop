@@ -2258,8 +2258,6 @@ var request = function request(options) {
 
 /***/ }),
 
-<<<<<<< HEAD
-=======
 /***/ 141:
 /*!******************************************************************************************************!*\
   !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-forms/components/uni-forms/validate.js ***!
@@ -10190,7 +10188,6 @@ cfu;exports.default = _default;
 
 /***/ }),
 
->>>>>>> dev
 /***/ 181:
 /*!****************************************************************************************************************!*\
   !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/index.js ***!
@@ -12241,8 +12238,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-<<<<<<< HEAD
-=======
 /***/ 214:
 /*!****************************************************************************************************************!*\
   !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-load-more/components/uni-load-more/i18n/index.js ***!
@@ -12766,7 +12761,6 @@ Calendar;exports.default = _default;
 
 /***/ }),
 
->>>>>>> dev
 /***/ 3:
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!

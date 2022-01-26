@@ -97,6 +97,9 @@ try {
   components = {
     boxTitle: function() {
       return __webpack_require__.e(/*! import() | components/box-title/box-title */ "components/box-title/box-title").then(__webpack_require__.bind(null, /*! @/components/box-title/box-title.vue */ 101))
+    },
+    qiunDataCharts: function() {
+      return Promise.all(/*! import() | uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts")]).then(__webpack_require__.bind(null, /*! @/uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts.vue */ 167))
     }
   }
 } catch (e) {
