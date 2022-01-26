@@ -61,7 +61,22 @@
 				"enablePullDownRefresh": false
 			}
 
+		}, {
+			"path": "pages/auth/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/auth/reg/reg",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"enablePullDownRefresh": false
+			}
+
 		}
+
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

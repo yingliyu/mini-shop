@@ -8,7 +8,9 @@
     "pages/picture/picture",
     "pages/contact/contact",
     "pages/news/detail",
-    "pages/goods/detail"
+    "pages/goods/detail",
+    "pages/auth/login/login",
+    "pages/auth/reg/reg"
   ],
   "subPackages": [],
   "window": {
