@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 1307587 */
-  src: url('https://gitee.com/ylyubook/iconfonts/blob/master/iconfont.woff2?t=1642754475675') format('woff2'),
-       url('https://gitee.com/ylyubook/iconfonts/blob/master/iconfont.woff?t=1642754475675') format('woff'),
-       url('https://gitee.com/ylyubook/iconfonts/blob/master/iconfont.ttf?t=1642754475675') format('truetype');
+  src: url('~@/static/fonts/iconfont.woff2?t=1642754475675') format('woff2'),
+       url('~@/static/fonts/iconfont.woff?t=1642754475675') format('woff'),
+       url('~@/static/fonts/iconfont.ttf?t=1642754475675') format('truetype');
 }
 
 .iconfont {

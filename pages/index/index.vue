@@ -1,13 +1,13 @@
 <template>
 	<view class="home">
 		<swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :circular="true" :duration="duration">
-			<swiper-item v-for="item in banners" :key="item.goods_id"><image :src="item.image_src" /></swiper-item>
+			<swiper-item v-for="item in banners" :key="item.goods_id"><image class="swiper-img" :src="item.image_src" /></swiper-item>
 		</swiper>
 		<!-- 导航区域 -->
 		<view class="nav">
 			<view class="nav-item" v-for="item in navList" :key="item.title" @click="navItemClick(item.path)">
-				<view :class="item.icon"></view>
-				<text>{{ item.title }}</text>
+				<view class="nav-icon" :class="item.icon"></view>
+				<text class="nav-title">{{ item.title }}</text>
 			</view>
 		</view>
 
@@ -122,13 +122,13 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .home {
 	background-color: #eee;
 	.swiper {
 		width: 750rpx;
 		height: 380rpx;
-		image {
+		.swiper-img {
 			width: 100%;
 			height: 100%;
 		}
@@ -141,7 +141,7 @@ export default {
 		.nav-item {
 			// width: 25%;
 			text-align: center;
-			view {
+			.nav-icon {
 				width: 120rpx;
 				height: 120rpx;
 				margin: 10px auto;
@@ -151,7 +151,7 @@ export default {
 				line-height: 120rpx;
 				font-size: 50rpx;
 			}
-			text {
+			.nav-title {
 				font-size: 30rpx;
 			}
 		}

@@ -24,29 +24,29 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.news .news-item {
+.news .news-item.data-v-896fbc14 {
   display: flex;
   padding: 10rpx 20rpx;
   border-bottom: 1px solid #eee;
 }
-.news .news-item image {
+.news .news-item .news-img.data-v-896fbc14 {
   width: 200rpx;
   height: 150rpx;
 }
-.news .news-item .content {
+.news .news-item .content.data-v-896fbc14 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 15rpx 0 15rpx 20rpx;
 }
-.news .news-item .content .title {
+.news .news-item .content .title.data-v-896fbc14 {
   font-size: 30rpx;
   line-height: 40rpx;
 }
-.news .news-item .content .info {
+.news .news-item .content .info.data-v-896fbc14 {
   font-size: 24rpx;
 }
-.news .news-item .content .info text:first-child {
+.news .news-item .content .info text.data-v-896fbc14:first-child {
   padding-right: 20rpx;
 }
 

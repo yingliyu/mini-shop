@@ -7,7 +7,6 @@
     "pages/goods/goods",
     "pages/picture/picture",
     "pages/contact/contact",
-    "components/goods-list/goods-list",
     "pages/news/detail",
     "pages/goods/detail"
   ],
@@ -36,13 +35,13 @@
         "selectedIconPath": "static/tabbar/news-active.png"
       },
       {
-        "text": "购物车",
+        "text": "表格/单",
         "pagePath": "pages/cart/cart",
         "iconPath": "static/tabbar/cart.png",
         "selectedIconPath": "static/tabbar/cart-active.png"
       },
       {
-        "text": "会员中心",
+        "text": "图表",
         "pagePath": "pages/member/member",
         "iconPath": "static/tabbar/member.png",
         "selectedIconPath": "static/tabbar/member-active.png"

@@ -2,7 +2,7 @@
 	<view class="goods">
 		<view v-for="(item, index) in goods" :key="item.goods_id" class="goods-item" @click='navigator(item.goods_id)'>
 			<!-- <image src="../../static/goods.jpg" mode=""></image> -->
-			<image :src="item.goods_big_logo || customImg" mode=""></image>
+			<image class="goods-img" :src="item.goods_big_logo || customImg" mode=""></image>
 			<view class="price">
 				<text>￥{{ item.goods_price }}</text>
 				<text>￥2998</text>
@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .goods {
 	// background-color: $uni-bg-color;
 	padding: 0 15rpx;
@@ -41,7 +41,7 @@ export default {
 		padding: 15rpx;
 		box-sizing: border-box;
 		background-color: $uni-bg-color;
-		image {
+		.goods-img {
 			width: 80%;
 			height: 150px;
 			display: block;

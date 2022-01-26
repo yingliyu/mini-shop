@@ -1,6 +1,9 @@
 {
+<<<<<<< HEAD
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
+=======
+>>>>>>> dev
   "usingComponents": {},
   "component": true
 }

@@ -1,7 +1,5 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-
-
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -17,14 +15,14 @@
 		}, {
 			"path": "pages/cart/cart",
 			"style": {
-				"navigationBarTitleText": "购物车",
+				"navigationBarTitleText": "表格表单",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
 			"path": "pages/member/member",
 			"style": {
-				"navigationBarTitleText": "会员中心",
+				"navigationBarTitleText": "图表示例",
 				"enablePullDownRefresh": false
 			}
 
@@ -49,22 +47,14 @@
 				"navigationBarTitleText": "联系我们",
 				"enablePullDownRefresh": false
 			}
-		}, {
-			"path": "components/goods-list/goods-list",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-		}, {
+		},
+		{
 			"path": "pages/news/detail",
 			"style": {
 				"navigationBarTitleText": "资讯详情",
 				"enablePullDownRefresh": false
 			}
-
-		}
-
-		, {
+		}, {
 			"path": "pages/goods/detail",
 			"style": {
 				"navigationBarTitleText": "商品详情",
@@ -96,13 +86,13 @@
 				"selectedIconPath": "static/tabbar/news-active.png"
 			},
 			{
-				"text": "购物车",
+				"text": "表格/单",
 				"pagePath": "pages/cart/cart",
 				"iconPath": "static/tabbar/cart.png",
 				"selectedIconPath": "static/tabbar/cart-active.png"
 			},
 			{
-				"text": "会员中心",
+				"text": "图表",
 				"pagePath": "pages/member/member",
 				"iconPath": "static/tabbar/member.png",
 				"selectedIconPath": "static/tabbar/member-active.png"
