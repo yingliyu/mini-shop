@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "图表示例",
+  "navigationBarTitleText": "会员中心",
   "enablePullDownRefresh": false,
   "usingComponents": {
     "box-title": "/components/box-title/box-title",

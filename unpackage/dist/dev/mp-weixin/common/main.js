@@ -9,7 +9,7 @@
 "use strict";
 /* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ 5);var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ 6));
 var _api = __webpack_require__(/*! ./utils/api.js */ 12);
-var _store = _interopRequireDefault(__webpack_require__(/*! ./store */ 301));
+var _store = _interopRequireDefault(__webpack_require__(/*! ./store */ 13));
 
 
 

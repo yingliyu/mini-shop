@@ -1,5 +1,6 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -22,7 +23,7 @@
 		}, {
 			"path": "pages/member/member",
 			"style": {
-				"navigationBarTitleText": "图表示例",
+				"navigationBarTitleText": "会员中心",
 				"enablePullDownRefresh": false
 			}
 
@@ -67,16 +68,13 @@
 				"navigationBarTitleText": "登录",
 				"enablePullDownRefresh": false
 			}
-
 		}, {
 			"path": "pages/auth/reg/reg",
 			"style": {
 				"navigationBarTitleText": "注册",
 				"enablePullDownRefresh": false
 			}
-
 		}
-
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -107,7 +105,7 @@
 				"selectedIconPath": "static/tabbar/cart-active.png"
 			},
 			{
-				"text": "图表",
+				"text": "会员中心",
 				"pagePath": "pages/member/member",
 				"iconPath": "static/tabbar/member.png",
 				"selectedIconPath": "static/tabbar/member-active.png"

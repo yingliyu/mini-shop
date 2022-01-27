@@ -1,4 +1,6 @@
+import store from '@/store'
 const BASE_URL = 'http://rap2api.taobao.org';
+const token = store.state.user.token || uni.getStorageSync('token')
 
 export const request = (options) => {
 	const url = (options.baseUrl ? options.baseUrl : BASE_URL + '/app/mock/297725') + options.url
@@ -7,6 +9,9 @@ export const request = (options) => {
 			url,
 			method: options.method || 'GET',
 			data: options.data,
+			header: {
+				Authorization: token
+			},
 			success: res => {
 				if (res && res.data && res.data.meta && res.data.meta.status !== 200) {
 					return uni.showToast({
