@@ -301,50 +301,52 @@ var _vuex = __webpack_require__(/*! vuex */ 14);function _interopRequireDefault(
 
     },
     // 触发登录提交表单
-    submit: function submit() {
+    submit: function submit() {var _this2 = this;
       this.$refs.form.
       validate().
-      then( /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2(data) {return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
+      then( /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2(data) {var res;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
                   console.log('表单数据信息：', data);
-                  wx.cloud.
-                  database().
-                  collection('user').
-                  where({
-                    userName: data.name }).
-
-                  get({
-                    success: function success(res) {
-                      console.log('获取数据成功=', res);
-                      if (data.password = res.data[0].password) {
-                        uni.showToast({
-                          title: '登录成功' });
-
-                      }
-                    },
-                    fail: function fail(err) {
-                      console.log('获取数据失败', err);
-                    } });
-
-
-                  // if (!this.resultData.flag) {
-                  // 	return this.messageToggle(0);
-                  // }
-                  // try {
-                  // 	const res = await this.$request({
-                  // 		method: 'POST',
-                  // 		url: '/shop/login',
-                  // 		data
+                  // 云开发
+                  // wx.cloud
+                  // 	.database()
+                  // 	.collection('user')
+                  // 	.where({
+                  // 		userName: data.name
+                  // 	})
+                  // 	.get({
+                  // 		success(res) {
+                  // 			console.log('获取数据成功=', res);
+                  // 			if(data.password = res.data[0].password){
+                  // 				uni.showToast({
+                  // 					title: '登录成功'
+                  // 				});
+                  // 			}
+                  // 		},
+                  // 		fail(err) {
+                  // 			console.log('获取数据失败', err);
+                  // 		}
                   // 	});
-                  // 	this.loginAfter(res.token);
-                  // 	this.messageToggle(1);
-                  // } catch (e) {
-                  // 	//TODO handle the exception
-                  // }
-                case 2:case "end":return _context2.stop();}}}, _callee2);}));return function (_x) {return _ref.apply(this, arguments);};}()).
+                  if (
+                  _this2.resultData.flag) {_context2.next = 3;break;}return _context2.abrupt("return",
+                  _this2.messageToggle(0));case 3:_context2.prev = 3;_context2.next = 6;return (
+
+
+                    _this2.$request({
+                      method: 'POST',
+                      url: '/shop/login',
+                      data: data }));case 6:res = _context2.sent;
+
+                  _this2.loginAfter(res.token);
+                  _this2.messageToggle(1);_context2.next = 13;break;case 11:_context2.prev = 11;_context2.t0 = _context2["catch"](3);case 13:case "end":return _context2.stop();}}}, _callee2, null, [[3, 11]]);}));return function (_x) {return _ref.apply(this, arguments);};}()).
+
+
+
+
       catch(function (err) {
         console.log('表单错误信息：', err);
       });
     },
+    // 消息提示
     messageToggle: function messageToggle(type) {
       if (type === 1) {
         this.msgType = 'success';
@@ -362,13 +364,14 @@ var _vuex = __webpack_require__(/*! vuex */ 14);function _interopRequireDefault(
       }
     },
 
-    wxLogin: function wxLogin() {var _this2 = this;
+
+    wxLogin: function wxLogin() {var _this3 = this;
       console.log('微信登录！');
       uni.getUserProfile({
         desc: '必须授权才可以继续使用', // 必填
         success: function success(res) {
           console.log('授权成功', res);
-          _this2.loginAfter(res.userInfo);
+          _this3.loginAfter(res.userInfo);
           uni.showToast({
             title: '登录授权成功',
             icon: 'none',

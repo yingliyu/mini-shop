@@ -136,45 +136,47 @@ export default {
 				.validate()
 				.then(async data => {
 					console.log('表单数据信息：', data);
-					wx.cloud
-						.database()
-						.collection('user')
-						.where({
-							userName: data.name
-						})
-						.get({
-							success(res) {
-								console.log('获取数据成功=', res);
-								if(data.password = res.data[0].password){
-									uni.showToast({
-										title: '登录成功'
-									});
-								}
-							},
-							fail(err) {
-								console.log('获取数据失败', err);
-							}
-						});
-
-					// if (!this.resultData.flag) {
-					// 	return this.messageToggle(0);
-					// }
-					// try {
-					// 	const res = await this.$request({
-					// 		method: 'POST',
-					// 		url: '/shop/login',
-					// 		data
+					// 云开发
+					// wx.cloud
+					// 	.database()
+					// 	.collection('user')
+					// 	.where({
+					// 		userName: data.name
+					// 	})
+					// 	.get({
+					// 		success(res) {
+					// 			console.log('获取数据成功=', res);
+					// 			if(data.password = res.data[0].password){
+					// 				uni.showToast({
+					// 					title: '登录成功'
+					// 				});
+					// 			}
+					// 		},
+					// 		fail(err) {
+					// 			console.log('获取数据失败', err);
+					// 		}
 					// 	});
-					// 	this.loginAfter(res.token);
-					// 	this.messageToggle(1);
-					// } catch (e) {
-					// 	//TODO handle the exception
-					// }
+
+					if (!this.resultData.flag) {
+						return this.messageToggle(0);
+					}
+					try {
+						const res = await this.$request({
+							method: 'POST',
+							url: '/shop/login',
+							data
+						});
+						this.loginAfter(res.token);
+						this.messageToggle(1);
+					} catch (e) {
+						//TODO handle the exception
+					}
 				})
 				.catch(err => {
 					console.log('表单错误信息：', err);
 				});
 		},
+		// 消息提示
 		messageToggle(type) {
 			if (type === 1) {
 				this.msgType = 'success';
@@ -191,6 +193,7 @@ export default {
 				this.$refs.message.open();
 			}
 		},
+		
 		// #ifdef MP-WEIXIN
 		wxLogin() {
 			console.log('微信登录！');

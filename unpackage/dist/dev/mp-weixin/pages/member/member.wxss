@@ -33,23 +33,22 @@
   /* 请根据需求修改图表容器尺寸，如果父容器没有高度图表则会显示异常 */
 }
 .charts-wrapper .to-login {
-  padding: 20rpx;
-  margin-bottom: 20rpx;
-  text-align: center;
-  background-color: #2979ff;
-  font-weight: bold;
-  color: #fff;
+  color: #2979ff;
   cursor: pointer;
-  border-radius: 5px;
 }
 .charts-wrapper .user-info {
   display: flex;
-  padding: 30rpx 20rpx;
+  justify-content: center;
+  padding: 60rpx 20rpx;
+  margin-bottom: 30rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
 }
 .charts-wrapper .user-info .avator {
   width: 100rpx;
   height: 100rpx;
   margin-right: 15rpx;
+  border-radius: 50%;
 }
 .charts-wrapper .user-info .info {
   display: flex;

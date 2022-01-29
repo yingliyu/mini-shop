@@ -1,15 +1,14 @@
 <template>
 	<view class="charts-wrapper">
-		<navigator v-if='!loginState' class="to-login" url="../auth/login/login">登录</navigator>
-		<button v-else type="primary" @click="logout">退出登录</button>
-		<box-title title="用户信息" />
 		<view class="user-info" v-if="userInfo">
 			<image class="avator" v-if="userInfo.avator" :src="userInfo.avator" mode="aspectFit"></image>
 			<view class="info">
 				<view class="uname" v-if="userInfo.userName">{{ userInfo.userName }}</view>
+				<navigator v-if="!loginState" class="to-login" url="../auth/login/login">登录/注册</navigator>
 				<view class="phone" v-if="userInfo.phone">{{ userInfo.phone }}</view>
 			</view>
 		</view>
+		<button v-if="loginState" type="primary" @click="logout">退出登录</button>
 		<!-- 柱状图 -->
 		<view class="charts-box">
 			<box-title title="柱状图" />
@@ -30,7 +29,7 @@
 </template>
 
 <script>
-import { mapState,mapActions } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 import BoxTitle from '@/components/box-title/box-title.vue';
 export default {
 	components: { BoxTitle },
@@ -117,7 +116,8 @@ export default {
 					}
 				]
 			},
-			wordCloud: {}
+			wordCloud: {},
+			getUserInfoTag: true // 是否获取用户信息
 		};
 	},
 
@@ -127,16 +127,44 @@ export default {
 	},
 	onLoad() {
 		this.wordCloud = JSON.parse(JSON.stringify(this.wordCloudChartData));
-		console.log(this.userLogoutAction());
+	},
+	created() {
+		wx.getSetting({
+			success: res => {
+				if (res.authSetting['scope.userInfo']) {
+					uni.getUserInfo({
+						success: res => {
+							this.getUserInfoTag = false;
+						},
+						fail: () => {
+							console.log('用户未授权！');
+						}
+					});
+				}
+			}
+		});
+	},
+	mounted() {
+		if (this.loginState) {
+			wx.openSetting({
+				success(res) {
+					console.log(res.authSetting);
+					// res.authSetting = {
+					//   "scope.userInfo": true,
+					//   "scope.userLocation": true
+					// }
+				}
+			});
+		}
 	},
 	methods: {
 		...mapActions(['userLogoutAction']),
-		logout(){
-			this.userLogoutAction()
+		logout() {
+			this.userLogoutAction();
 			uni.showToast({
-			  title: '您已退出登录~',
-			  icon: 'none',
-			})
+				title: '您已退出登录~',
+				icon: 'none'
+			});
 		}
 	}
 };
@@ -150,22 +178,21 @@ export default {
 	background-color: $bg-color-grey;
 	box-sizing: border-box;
 	.to-login {
-		padding: 20rpx;
-		margin-bottom: 20rpx;
-		text-align: center;
-		background-color:#2979ff ;
-		font-weight: bold;
-		color: $shop-white;
+		color: #2979ff;
 		cursor: pointer;
-		border-radius: 5px;
 	}
 	.user-info {
 		display: flex;
-		padding: 30rpx 20rpx;
+		justify-content: center;
+		padding: 60rpx 20rpx;
+		margin-bottom: 30rpx;
+		background-color: $shop-white;
+		border-radius: 10rpx;
 		.avator {
 			width: 100rpx;
 			height: 100rpx;
 			margin-right: 15rpx;
+			border-radius: 50%;
 		}
 		.info {
 			display: flex;

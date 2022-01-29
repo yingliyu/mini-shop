@@ -1,0 +1,13 @@
+
+# dependencies
+/unpackage
+
+# production
+/dist
+
+# HbuilderX
+.hbuilderx
+
+
+
+

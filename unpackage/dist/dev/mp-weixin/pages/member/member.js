@@ -187,7 +187,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 var _vuex = __webpack_require__(/*! vuex */ 14);function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var BoxTitle = function BoxTitle() {__webpack_require__.e(/*! require.ensure | components/box-title/box-title */ "components/box-title/box-title").then((function () {return resolve(__webpack_require__(/*! @/components/box-title/box-title.vue */ 121));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 {
@@ -275,8 +274,9 @@ var _vuex = __webpack_require__(/*! vuex */ 14);function ownKeys(object, enumera
 
 
 
-      wordCloud: {} };
-
+      wordCloud: {},
+      getUserInfoTag: true // 是否获取用户信息
+    };
   },
 
   computed: _objectSpread(_objectSpread({},
@@ -285,7 +285,35 @@ var _vuex = __webpack_require__(/*! vuex */ 14);function ownKeys(object, enumera
 
   onLoad: function onLoad() {
     this.wordCloud = JSON.parse(JSON.stringify(this.wordCloudChartData));
-    console.log(this.userLogoutAction());
+  },
+  created: function created() {var _this = this;
+    wx.getSetting({
+      success: function success(res) {
+        if (res.authSetting['scope.userInfo']) {
+          uni.getUserInfo({
+            success: function success(res) {
+              _this.getUserInfoTag = false;
+            },
+            fail: function fail() {
+              console.log('用户未授权！');
+            } });
+
+        }
+      } });
+
+  },
+  mounted: function mounted() {
+    if (this.loginState) {
+      wx.openSetting({
+        success: function success(res) {
+          console.log(res.authSetting);
+          // res.authSetting = {
+          //   "scope.userInfo": true,
+          //   "scope.userLocation": true
+          // }
+        } });
+
+    }
   },
   methods: _objectSpread(_objectSpread({},
   (0, _vuex.mapActions)(['userLogoutAction'])), {}, {
