@@ -947,7 +947,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_NAME":"mini-shop","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"mini-shop","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2221,9 +2221,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 12:
-/*!************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/utils/api.js ***!
-  \************************************************************/
+/*!************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/utils/api.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2264,9 +2264,9 @@ var request = function request(options) {
 /***/ }),
 
 /***/ 13:
-/*!**************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/store/index.js ***!
-  \**************************************************************/
+/*!**************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/store/index.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3545,9 +3545,9 @@ module.exports = index_cjs;
 /***/ }),
 
 /***/ 15:
-/*!***************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/store/modules/user/index.js ***!
-  \***************************************************************************/
+/*!***************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/store/modules/user/index.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3622,9 +3622,9 @@ user;exports.default = _default;
 /***/ }),
 
 /***/ 16:
-/*!************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/store/modules/user/mutation-types.js ***!
-  \************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/store/modules/user/mutation-types.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3636,9 +3636,9 @@ exports.USERLOGOUT = USERLOGOUT;var SET_TOKEN = 'setToken';exports.SET_TOKEN = S
 /***/ }),
 
 /***/ 161:
-/*!******************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-forms/components/uni-forms/validate.js ***!
-  \******************************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-forms/components/uni-forms/validate.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4146,9 +4146,9 @@ SchemaValidator;exports.default = _default;
 /***/ }),
 
 /***/ 184:
-/*!**************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/pages.json?{"type":"stat"} ***!
-  \**************************************************************************/
+/*!**************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/pages.json?{"type":"stat"} ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4158,9 +4158,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 192:
-/*!********************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/qiun-data-charts/js_sdk/u-charts/u-charts.js ***!
-  \********************************************************************************************************/
+/*!********************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/qiun-data-charts/js_sdk/u-charts/u-charts.js ***!
+  \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10973,9 +10973,9 @@ uCharts;exports.default = _default;
 /***/ }),
 
 /***/ 193:
-/*!**************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/qiun-data-charts/js_sdk/u-charts/config-ucharts.js ***!
-  \**************************************************************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/qiun-data-charts/js_sdk/u-charts/config-ucharts.js ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11597,9 +11597,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 201:
-/*!****************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/index.js ***!
-  \****************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/index.js ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11615,9 +11615,9 @@ var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 2
 /***/ }),
 
 /***/ 202:
-/*!***************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/en.json ***!
-  \***************************************************************************************************************/
+/*!***************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/en.json ***!
+  \***************************************************************************************************************************/
 /*! exports provided: uni-goods-nav.options.shop, uni-goods-nav.options.cart, uni-goods-nav.buttonGroup.addToCart, uni-goods-nav.buttonGroup.buyNow, default */
 /***/ (function(module) {
 
@@ -11626,9 +11626,9 @@ module.exports = JSON.parse("{\"uni-goods-nav.options.shop\":\"shop\",\"uni-good
 /***/ }),
 
 /***/ 203:
-/*!********************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/zh-Hans.json ***!
-  \********************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/zh-Hans.json ***!
+  \********************************************************************************************************************************/
 /*! exports provided: uni-goods-nav.options.shop, uni-goods-nav.options.cart, uni-goods-nav.buttonGroup.addToCart, uni-goods-nav.buttonGroup.buyNow, default */
 /***/ (function(module) {
 
@@ -11637,9 +11637,9 @@ module.exports = JSON.parse("{\"uni-goods-nav.options.shop\":\"店铺\",\"uni-go
 /***/ }),
 
 /***/ 204:
-/*!********************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/zh-Hant.json ***!
-  \********************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/zh-Hant.json ***!
+  \********************************************************************************************************************************/
 /*! exports provided: uni-goods-nav.options.shop, uni-goods-nav.options.cart, uni-goods-nav.buttonGroup.addToCart, uni-goods-nav.buttonGroup.buyNow, default */
 /***/ (function(module) {
 
@@ -11648,9 +11648,9 @@ module.exports = JSON.parse("{\"uni-goods-nav.options.shop\":\"店鋪\",\"uni-go
 /***/ }),
 
 /***/ 212:
-/*!***************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-icons/components/uni-icons/icons.js ***!
-  \***************************************************************************************************/
+/*!***************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-icons/components/uni-icons/icons.js ***!
+  \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12825,9 +12825,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 227:
-/*!***************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-popup/components/uni-popup/popup.js ***!
-  \***************************************************************************************************/
+/*!***************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-popup/components/uni-popup/popup.js ***!
+  \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13651,9 +13651,9 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 256:
-/*!****************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-load-more/components/uni-load-more/i18n/index.js ***!
-  \****************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-load-more/components/uni-load-more/i18n/index.js ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13669,9 +13669,9 @@ var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 2
 /***/ }),
 
 /***/ 257:
-/*!***************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-load-more/components/uni-load-more/i18n/en.json ***!
-  \***************************************************************************************************************/
+/*!***************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-load-more/components/uni-load-more/i18n/en.json ***!
+  \***************************************************************************************************************************/
 /*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
 /***/ (function(module) {
 
@@ -13680,9 +13680,9 @@ module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"Pull up to show mo
 /***/ }),
 
 /***/ 258:
-/*!********************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hans.json ***!
-  \********************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hans.json ***!
+  \********************************************************************************************************************************/
 /*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
 /***/ (function(module) {
 
@@ -13691,9 +13691,9 @@ module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"上拉显示更多
 /***/ }),
 
 /***/ 259:
-/*!********************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hant.json ***!
-  \********************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hant.json ***!
+  \********************************************************************************************************************************/
 /*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
 /***/ (function(module) {
 
@@ -13702,9 +13702,9 @@ module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"上拉顯示更多
 /***/ }),
 
 /***/ 279:
-/*!***********************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
-  \***********************************************************************************************************************/
+/*!***********************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13842,9 +13842,9 @@ function createAnimation(option, _this) {
 /***/ }),
 
 /***/ 285:
-/*!****************************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/index.js ***!
-  \****************************************************************************************************************************/
+/*!****************************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/index.js ***!
+  \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13860,9 +13860,9 @@ var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 2
 /***/ }),
 
 /***/ 286:
-/*!***************************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/en.json ***!
-  \***************************************************************************************************************************/
+/*!***************************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/en.json ***!
+  \***************************************************************************************************************************************/
 /*! exports provided: uni-datetime-picker.selectDate, uni-datetime-picker.selectTime, uni-datetime-picker.selectDateTime, uni-datetime-picker.startDate, uni-datetime-picker.endDate, uni-datetime-picker.startTime, uni-datetime-picker.endTime, uni-datetime-picker.ok, uni-datetime-picker.clear, uni-datetime-picker.cancel, uni-calender.MON, uni-calender.TUE, uni-calender.WED, uni-calender.THU, uni-calender.FRI, uni-calender.SAT, uni-calender.SUN, default */
 /***/ (function(module) {
 
@@ -13871,9 +13871,9 @@ module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"select date\"
 /***/ }),
 
 /***/ 287:
-/*!********************************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hans.json ***!
-  \********************************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hans.json ***!
+  \********************************************************************************************************************************************/
 /*! exports provided: uni-datetime-picker.selectDate, uni-datetime-picker.selectTime, uni-datetime-picker.selectDateTime, uni-datetime-picker.startDate, uni-datetime-picker.endDate, uni-datetime-picker.startTime, uni-datetime-picker.endTime, uni-datetime-picker.ok, uni-datetime-picker.clear, uni-datetime-picker.cancel, uni-calender.SUN, uni-calender.MON, uni-calender.TUE, uni-calender.WED, uni-calender.THU, uni-calender.FRI, uni-calender.SAT, default */
 /***/ (function(module) {
 
@@ -13882,9 +13882,9 @@ module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"选择日期\
 /***/ }),
 
 /***/ 288:
-/*!********************************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hant.json ***!
-  \********************************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hant.json ***!
+  \********************************************************************************************************************************************/
 /*! exports provided: uni-datetime-picker.selectDate, uni-datetime-picker.selectTime, uni-datetime-picker.selectDateTime, uni-datetime-picker.startDate, uni-datetime-picker.endDate, uni-datetime-picker.startTime, uni-datetime-picker.endTime, uni-datetime-picker.ok, uni-datetime-picker.clear, uni-datetime-picker.cancel, uni-calender.SUN, uni-calender.MON, uni-calender.TUE, uni-calender.WED, uni-calender.THU, uni-calender.FRI, uni-calender.SAT, default */
 /***/ (function(module) {
 
@@ -19419,7 +19419,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_NAME":"mini-shop","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"mini-shop","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -19440,14 +19440,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_NAME":"mini-shop","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"mini-shop","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_NAME":"mini-shop","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"mini-shop","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -19533,7 +19533,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_NAME":"mini-shop","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"mini-shop","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -19945,9 +19945,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 331:
-/*!**********************************************************************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/uni_modules/uni-datetime-picker/components/uni-datetime-picker/util.js ***!
-  \**********************************************************************************************************************/
+/*!**********************************************************************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/uni_modules/uni-datetime-picker/components/uni-datetime-picker/util.js ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20830,9 +20830,9 @@ function resolveLocaleChain(locale) {
 /***/ }),
 
 /***/ 5:
-/*!**********************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/pages.json ***!
-  \**********************************************************/
+/*!**********************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/pages.json ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -20841,9 +20841,9 @@ function resolveLocaleChain(locale) {
 /***/ }),
 
 /***/ 62:
-/*!****************************************************************!*\
-  !*** D:/lemon/project/mini-program/mini-shop/static/goods.jpg ***!
-  \****************************************************************/
+/*!****************************************************************************!*\
+  !*** /Users/lemonyu/Desktop/learn/mini-program/mini-shop/static/goods.jpg ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
